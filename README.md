@@ -1,62 +1,60 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Bookstore
 
-> Description the project.
+> The Bookstore is a web app that allows the user to keep track and register the progress of reading the favorite books:
 
+This app will do the following:
+
+- Display a list of books.
+- Add a book.
+- Edit an entry.
+- Show the details about the book.
+- Show the progress of reading.
+- Remove a selected book.
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
-
-## Live Demo (if available)
-
-[Live Demo Link](https://livedemo.com)
-
+- Major languages: JavaScript, HTML & CSS;
+- Frameworks: React;
+- Technologies used: GitHub, GitFlow, Terminal;
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
-To get a local copy up and running follow these simple example steps.
-
 ### Prerequisites
+
+- Please make sure you have Node.js packedge installed on your terminal.
 
 ### Setup
 
+To get a local copy up and running follow these simple steps.
+
+To setup the bookstore project in your local, in the repo page:
+click on code (dropdown list) > Download as ZIP;
+or open terminal of path you want to install project and run this command <br>
+`git clone https://github.com/oliverSCZ/bookstore.git`.
+
 ### Install
 
-### Usage
+Run in your terminal the following commands:
 
-### Run tests
+**`$ cd bookstore/`**<br>
+**`$ npm install`**<br>
+**`$ npm start`**
 
-### Deployment
+## Author
 
+👤 **Nicolae Pop**
 
-
-## Authors
-
-👤 **Author1**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@olivercoimbra](https://github.com/oliverSCZ)
+- Twitter: [@olivercoimbra](https://twitter.com/olivercoimbra)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/oliver-coimbra/)
 
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/oliverSCZ/bookstore/issues).
 
 ## Show your support
 
@@ -64,9 +62,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+This is a project done during React module at **[Microverse](https://www.microverse.org/)**, a remote web-developer school, using their support and frameworks provided.
 
 ## 📝 License
 
