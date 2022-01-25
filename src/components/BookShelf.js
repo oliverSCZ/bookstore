@@ -1,4 +1,4 @@
-import Book from './Book';
+import Book from './Books';
 import Form from './Form';
 
 const BookShelf = () => {
