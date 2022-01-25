@@ -1,36 +1,13 @@
-import Book from './Books';
-import Form from './Form';
+import { useSelector } from 'react-redux';
+import Book from './Book';
+import AddNewBookForm from './AddNewBookForm';
 
 const BookShelf = () => {
-  const books = [
-    {
-      id: 1,
-      title: 'The Hunger Games',
-      category: 'Action',
-      author: 'Suzanne Collins',
-      completed: '64',
-      chapter: 'Chapter 3',
-    },
-    {
-      id: 2,
-      title: 'Dune',
-      category: 'Science Fiction',
-      author: 'Frank Herbert',
-      completed: '8',
-      chapter: 'Chapter 17: A lesson learned',
-    },
-    {
-      id: 3,
-      title: 'Capital in the Twenty-First Century',
-      category: 'Economy',
-      author: 'Andrei Tamaioaga',
-      completed: '90',
-      chapter: 'A final word',
-    },
-  ];
+  const books = useSelector((state) => state.books);
 
   return (
     <main className="hero">
+      <ul>
       {books.map(({
         id, category, title, author, completed, chapter,
       }) => (
@@ -43,7 +20,8 @@ const BookShelf = () => {
           chapter={chapter}
         />
       ))}
-      <Form />
+      </ul>
+      <AddNewBookForm />
     </main>
   );
 };
