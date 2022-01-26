@@ -1,5 +1,5 @@
-import { useState } from "react";
-import { useDispatch } from "react-redux";
+import { useState } from 'react';
+import { useDispatch } from 'react-redux';
 import { addBook } from '../redux/books/books';
 
 const AddNewBookForm = () => {
@@ -9,7 +9,7 @@ const AddNewBookForm = () => {
   const dispatch = useDispatch();
 
   const inputChange = (e) => {
-    if(e.target.name === 'author') setAuthor(e.target.value);
+    if (e.target.name === 'author') setAuthor(e.target.value);
     else setTitle(e.target.value);
   };
 
@@ -25,24 +25,32 @@ const AddNewBookForm = () => {
     setAuthor('');
   };
 
-return (
-  <form
-  onSubmit={(e) => {
-    e.preventDefault();
-    submitBookToStore(e);
-  }}
-  >
-    <input
-    id="bookAuthor"
-    name="author"
-    value={author}
-    type="text"
-    placeholder="Author"
-    onChange={inputChange}
-    />
-    <button type="submit">Add Book</button>
-  </form>
-);
+  return (
+    <form
+      onSubmit={(e) => {
+        e.preventDefault();
+        submitBookToStore(e);
+      }}
+    >
+      <input
+        id="bookTitle"
+        value={title}
+        name="title"
+        type="text"
+        placeholder="Book Title"
+        onChange={inputChange}
+      />
+      <input
+        id="bookAuthor"
+        name="author"
+        value={author}
+        type="text"
+        placeholder="Author"
+        onChange={inputChange}
+      />
+      <button type="submit">Add Book</button>
+    </form>
+  );
 };
 
 export default AddNewBookForm;
