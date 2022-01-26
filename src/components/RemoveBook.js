@@ -1,6 +1,6 @@
-import { useDispatch } from "react-redux";
-import Proptypes from 'prop-types';
-import { removeBook } from '../redux/books/books'
+import { useDispatch } from 'react-redux';
+import PropTypes from 'prop-types';
+import { removeBook } from '../redux/books/books';
 
 const RemoveBook = ({ bookId }) => {
   const dispatch = useDispatch();
@@ -15,7 +15,7 @@ const RemoveBook = ({ bookId }) => {
 };
 
 RemoveBook.propTypes = {
-  bookId: Proptypes.string.isRequired,
+  bookId: PropTypes.string.isRequired,
 };
 
 export default RemoveBook;
