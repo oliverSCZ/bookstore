@@ -44,7 +44,7 @@ Run in your terminal the following commands:
 
 ## Author
 
-👤 **Nicolae Pop**
+👤 **Oliver Coimbra**
 
 - GitHub: [@olivercoimbra](https://github.com/oliverSCZ)
 - Twitter: [@olivercoimbra](https://twitter.com/olivercoimbra)
