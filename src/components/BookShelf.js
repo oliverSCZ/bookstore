@@ -8,18 +8,9 @@ const BookShelf = () => {
   return (
     <main className="hero">
       <ul>
-      {books.map(({
-        id, category, title, author, completed, chapter,
-      }) => (
-        <Book
-          key={id}
-          category={category}
-          title={title}
-          author={author}
-          completed={completed}
-          chapter={chapter}
-        />
-      ))}
+        {books.map(({ id, title, author }) => (
+          <Book id={id} key={id} title={title} author={author} />
+        ))}
       </ul>
       <AddNewBookForm />
     </main>
