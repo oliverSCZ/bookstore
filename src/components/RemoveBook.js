@@ -1,11 +1,11 @@
 import { useDispatch } from 'react-redux';
 import PropTypes from 'prop-types';
-import { removeBook } from '../redux/books/books';
+import { deleteBookRedux } from '../redux/books/booksRedux';
 
 const RemoveBook = ({ bookId }) => {
   const dispatch = useDispatch();
 
-  const handleRemove = () => dispatch(removeBook(bookId));
+  const handleRemove = () => dispatch(deleteBookRedux(bookId));
 
   return (
     <button type="button" onClick={handleRemove}>
