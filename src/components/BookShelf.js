@@ -4,7 +4,6 @@ import AddNewBookForm from './AddNewBookForm';
 
 const BookShelf = () => {
   const books = useSelector((state) => state.books);
-
   return (
     <main className="hero">
       <ul>
