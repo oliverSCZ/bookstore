@@ -1,0 +1,9 @@
+ul {
+  list-style: none;
+}
+
+.section-bar {
+  height: 0.125rem;
+  margin: 2.313rem 6.25rem 0;
+  border: solid 1px #e8e8e8;
+}
