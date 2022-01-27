@@ -1,0 +1,19 @@
+.remove-btn {
+  width: 3.375rem;
+  height: 1.188rem;
+  margin: 0.188rem 0.938rem 0.125rem 0;
+  font-family: RobotoSlab, serif;
+  font-size: 0.875rem;
+  font-weight: 300;
+  color: #4386bf;
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+.remove-btn:hover,
+.remove-btn:active {
+  border-bottom: 1px solid #305e86;
+  color: #305e86;
+}

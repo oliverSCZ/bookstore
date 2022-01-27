@@ -1,0 +1,12 @@
+.App-Wrapper-Outer {
+  width: 100%;
+  padding: 9.313rem 11.25% 17.688rem 11.25%;
+  background-color: #f5f6fa;
+}
+
+.App-Wrapper-Inner {
+  margin: 0 2.5rem 4rem 0;
+  border-radius: 4px;
+  box-shadow: 10px 20px 60px rgba(0, 0, 0, 0.3);
+  background-color: #fafafa;
+}

@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { newBookRedux } from '../redux/books/booksRedux';
+import './addNewBookForm.css';
 
 const AddNewBookForm = () => {
   const [title, setTitle] = useState('');
@@ -26,32 +27,39 @@ const AddNewBookForm = () => {
   };
 
   return (
-    <form
-      onSubmit={(e) => {
-        e.preventDefault();
-        submitBookToStore(e);
-      }}
-    >
-      <input
-        id="bookTitle"
-        value={title}
-        name="title"
-        type="text"
-        placeholder="Book Title"
-        onChange={inputChange}
-        required
-      />
-      <input
-        id="bookAuthor"
-        name="author"
-        value={author}
-        type="text"
-        placeholder="Author"
-        onChange={inputChange}
-        required
-      />
-      <button type="submit">Add Book</button>
-    </form>
+    <div>
+      <h3 className="form-title">Add new book</h3>
+      <form
+        onSubmit={(e) => {
+          e.preventDefault();
+          submitBookToStore(e);
+        }}
+      >
+        <input
+          id="bookTitle"
+          value={title}
+          name="title"
+          type="text"
+          placeholder="Book Title"
+          onChange={inputChange}
+          className="title-input"
+          required
+        />
+        <input
+          id="bookAuthor"
+          name="author"
+          value={author}
+          type="text"
+          placeholder="Author"
+          onChange={inputChange}
+          className="author-input"
+          required
+        />
+        <button type="submit" className="add-book-btn">
+          Add Book
+        </button>
+      </form>
+    </div>
   );
 };
 

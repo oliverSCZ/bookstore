@@ -1,0 +1,70 @@
+.header-panel {
+  width: 100%;
+  height: 5.938rem;
+  margin: 0 0 2.375rem;
+  padding: 1.438rem 6.188rem 1.688rem 6.25rem;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.header-title {
+  width: 15rem;
+  height: 2.313rem;
+  font-size: 1.875rem;
+  font-weight: bold;
+  color: #0290ff;
+  white-space: nowrap;
+}
+
+.main-nav-list {
+  list-style: none;
+  justify-self: flex-start;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-link:link,
+.nav-link:visited {
+  height: 1rem;
+  font-size: 0.813rem;
+  letter-spacing: 1.9px;
+  color: #121212;
+  opacity: 0.5;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.4s ease;
+}
+
+.nav-link:hover,
+.nav-link:active {
+  border-bottom: 1px solid #121212;
+  opacity: 1;
+}
+
+.nav-book {
+  width: 3.688rem;
+  height: 1rem;
+}
+
+.nav-cat {
+  width: 6.563rem;
+  height: 1rem;
+}
+
+.user-icon {
+  width: 2.813rem;
+  height: 2.813rem;
+  margin-left: auto;
+  padding: 0.875rem;
+  border: solid 1px #e8e8e8;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.icon {
+  color: #0290ff;
+}

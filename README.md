@@ -20,7 +20,7 @@ This app will do the following:
 - Technologies used: GitHub, GitFlow, Terminal;
 
 ## Getting Started
-
+![screenshot](./app_screenshot.png)
 ### Prerequisites
 
 - Please make sure you have Node.js packedge installed on your terminal.
