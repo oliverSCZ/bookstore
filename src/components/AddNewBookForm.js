@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { addBook } from '../redux/books/books';
+import { newBookRedux } from '../redux/books/booksRedux';
 
 const AddNewBookForm = () => {
   const [title, setTitle] = useState('');
@@ -20,7 +20,7 @@ const AddNewBookForm = () => {
       id: Math.random().toString(),
     };
 
-    dispatch(addBook(newBook));
+    dispatch(newBookRedux(newBook));
     setTitle('');
     setAuthor('');
   };
@@ -39,7 +39,6 @@ const AddNewBookForm = () => {
         type="text"
         placeholder="Book Title"
         onChange={inputChange}
-        required
       />
       <input
         id="bookAuthor"
@@ -48,7 +47,6 @@ const AddNewBookForm = () => {
         type="text"
         placeholder="Author"
         onChange={inputChange}
-        required
       />
       <button type="submit">Add Book</button>
     </form>
