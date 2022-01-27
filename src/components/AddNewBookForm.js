@@ -39,6 +39,7 @@ const AddNewBookForm = () => {
         type="text"
         placeholder="Book Title"
         onChange={inputChange}
+        required
       />
       <input
         id="bookAuthor"
@@ -47,6 +48,7 @@ const AddNewBookForm = () => {
         type="text"
         placeholder="Author"
         onChange={inputChange}
+        required
       />
       <button type="submit">Add Book</button>
     </form>
